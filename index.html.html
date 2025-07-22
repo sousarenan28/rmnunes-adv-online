@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dr. Rafael Mendes Nunes | Advogado</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Display&family=Cinzel&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            /* Paleta de Cores */
+            --color-dark-blue: #071739;
+            --color-light-gray: #DDC5DB;
+            --color-beige: #E3C19D;
+            --color-brown-header: #7D6B60;
+            --color-green-whatsapp: #25D366;
+            --color-footer-bg: #333333;
+            --color-footer-highlight: #ffc107;
+            --color-logo-blue: #00bcd4;
+
+            /* Famílias de Fontes */
+            --font-abril-display: 'Abril Display', serif;
+            --font-cinzel: 'Cinzel', serif;
+            --font-poppins: 'Poppins', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            font-family: var(--font-poppins);
+            scroll-behavior: smooth;
+            color: white; /* Cor padrão do texto para contrastar com o novo fundo escuro */
+            
+            background-image: url('imagens/background.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center center;
+            background-size: cover;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: -1;
+        }
+
+        body {
+            padding-top: 90px;
+        }
+
+        section {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+            text-align: center;
+            background-color: transparent;
+            color: white;
+        }
+        
+        .sec1 {
+            position: relative; 
+            padding: 100px 20px;
+            text-align: center;
+            z-index: 1; 
+            overflow: hidden; 
+            color: white; 
+        }
+    .btn-main-whatsapp {
+    display: inline-flex;
+    align-items: center;
+    background-color: var(--color-dark-blue);
+    color: white;
+    padding: 15px 35px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-family: var(--font-poppins);
+    font-weight: 600;
+    font-size: 1.1em;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+.btn-main-whatsapp i {
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+
+.btn-main-whatsapp:hover {
+    background-color: green;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+        .sec1 h1, .sec1 p {
+            position: relative;
+            z-index: 2;
+            color: white; /* Texto branco para fundo escuro */
+            text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
+        }
+        
+      .sec1 h1 {
+    font-family: var(--font-playfair-display); /* Controla qual fonte usar */
+    font-size: 3.8em; /* <-- AQUI você controla o tamanho da fonte do h1 */
+    font-weight: 700;
+    color: white;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
+}
+
+        .sec1 p {
+            font-family: var(--font-poppins);
+            font-size: 1.6em;
+            margin-top: 20px;
+        }
+
+/* Para "ESCRITÓRIO DE ADVOCACIA PARTICULAR" */
+.sec1 .top-title {
+    /* ... outras propriedades ... */
+    color: var(--color-top-subtitle); /* <-- AQUI você muda a cor */
+    /* ... */
+}
+
+/* Para "Advocacia 24 horas para casos urgentes (flagrante)" */
+.sec1 .section-highlight-text {
+    /* ... outras propriedades ... */
+    color: green; /* <-- AQUI você muda a cor */
+    /* ... */
+}
+
+        /* Seção #sobre foi REMOVIDA */
+
+        #confianca {
+            background-color: rgba(0,0,0,0.5);
+            padding: 80px 40px;
+            position: relative;
+            overflow: hidden;
+            color: white;
+        }
+
+        #confianca::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 10px;
+            height: 100%;
+            background-color: var(--color-dark-blue);
+            z-index: 1;
+        }
+
+        .confianca-content {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            gap: 50px;
+        }
+
+        .confianca-text {
+            flex: 1;
+            text-align: left;
+            max-width: 600px;
+            padding-right: 20px;
+        }
+
+        .confianca-text h2 {
+            font-family: var(--font-cinzel);
+            font-size: 2.5em;
+            color: white;
+            text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
+        }
+
+        .confianca-text p {
+            font-family: var(--font-poppins);
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            color: #eee;
+        }
+
+        .confianca-text p strong {
+            font-weight: 600;
+            color: white;
+        }
+
+        .btn-falar-especialista {
+            display: inline-flex;
+            align-items: center;
+            background-color: var(--color-beige);
+            color: var(--color-dark-blue);
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-family: var(--font-poppins);
+            font-weight: 600;
+            font-size: 1.1em;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+        }
+
+        .btn-falar-especialista i {
+            margin-right: 10px;
+            font-size: 1.2em;
+            color: var(--color-dark-blue);
+        }
+
+        .btn-falar-especialista:hover {
+            background-color: #d8b08f;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        }
+
+        .confianca-image {
+            flex-shrink: 0;
+            width: 400px;
+            height:400px;
+            border-radius: 20px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .confianca-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center center;
+            border-radius: 20px;
+        }
+
+        /* Seção Atuamos - Apenas conteúdo, sem background próprio */
+        #atuamos {
+            position: relative;
+            color: white; /* Texto branco */
+            background-color: rgba(0,0,0,0.5); /* Adicionar um overlay para esta seção também */
+        }
+
+        #atuamos::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0,0,0,0.3); /* Overlay mais leve para esta seção */
+            z-index: 0;
+        }
+
+        /* NOVA CAIXA DE CONTATO FIXA NA INFERIOR ESQUERDA */
+        .contact-box {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            width: 50%;
+            max-width: 450px;
+            background-color: var(--color-dark-blue);
+            color: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+            z-index: 998;
+            text-align: left;
+            opacity: 0.95;
+        }
+
+<footer>
+        <p class="copyright">
+            &copy; 2025 Dr. Rafael Mendes Nunes | OAB/SP 526251
+        </p>
+    </footer>
+        .contact-box h2 {
+            font-family: var(--font-cinzel);
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            color: white;
+            text-shadow: none;
+            text-align: center;
+        }
+
+        .contact-box p {
+            font-family: var(--font-poppins);
+            font-size: 1em;
+            line-height: 1.5;
+            margin-bottom: 10px;
+            color: #eee;
+            text-shadow: none;
+        }
+
+        .contact-box p i {
+            margin-right: 10px;
+            color: var(--color-green-whatsapp);
+        }
+
+        /* Header (Barra de Navegação Superior) */
+        .main-header {
+            width: 100%;
+            background-color: var(--color-dark-blue); /* Corrigido: Usando a variável definida */
+            color: white;
+            padding: 15px 40px;
+            position: fixed; /* Corrigido: Para ser fixo */
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header-logo img {
+            height: 70px;
+            width: auto;
+            filter: none; /* REMOVIDO: Filtro que alterava a cor da logo */
+        }
+
+        .main-nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .main-nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-family: var(--font-poppins);
+            font-weight: 500;
+            padding: 10px 15px;
+            transition: color 0.3s, background-color 0.3s;
+            border-radius: 5px;
+        }
+
+        .main-nav ul li a:hover,
+        .main-nav ul li a.active {
+            background-color: rgba(255,255,255,0.1);
+            color: var(--color-green-whatsapp);
+        }
+
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 30px;
+            cursor: pointer;
+        }
+
+        /* Rodapé REMOVIDO */
+
+        .whatsapp {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: var(--color-green-whatsapp);
+            color: white;
+            padding: 12px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            z-index: 999;
+        }
+
+        .sec3 {
+            padding: 60px 30px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .sec3 h2 {
+            font-family: var(--font-cinzel);
+            font-size: 2.8em;
+            margin-bottom: 30px;
+            color: #fff;
+            text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+            z-index: 2;
+        }
+
+        /* Títulos das Seções - Estilo geral */
+        section h2 {
+            font-family: var(--font-cinzel);
+            font-size: 2.8em;
+            margin-bottom: 20px;
+            color: white;
+            text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+        }
+
+        .atuacao-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+            margin-top: 20px;
+            z-index: 2;
+        }
+
+        .area {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 25px 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-top: 4px solid var(--color-dark-blue);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            z-index: 2;
+        }
+
+        .area .icon {
+            font-size: 34px;
+            margin-bottom: 15px;
+            color: var(--color-dark-blue);
+        }
+
+        .area h3 {
+            color: var(--color-dark-blue);
+            margin-bottom: 10px;
+            font-size: 1.2em;
+            font-family: var(--font-cinzel);
+        }
+
+        .area p {
+            font-size: 14px;
+            line-height: 1.5;
+            color: #333;
+            margin-bottom: 15px;
+            font-family: var(--font-poppins);
+        }
+
+        .btn-contato {
+            padding: 8px 14px;
+            background: var(--color-dark-blue);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 14px;
+            transition: background 0.3s;
+            font-family: var(--font-poppins);
+        }
+
+        .btn-contato:hover {
+            background: #004466;
+        }
+
+        /* Estilos para o Formulário de Atendimento */
+        .form-container {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            max-width: 500px;
+            width: 100%;
+            text-align: left;
+            margin: 0 auto;
+            color: #333;
+        }
+
+        .form-header {
+            background-color: var(--color-light-gray);
+            border-radius: 8px;
+            padding: 15px 20px;
+            margin-bottom: 25px;
+            font-size: 1.1em;
+            color: var(--color-dark-blue);
+            text-align: center;
+            font-family: var(--font-poppins);
+            font-weight: 500;
+        }
+
+        .form-header p {
+            margin: 0;
+        }
+
+        .contact-form input[type="text"],
+        .contact-form input[type="tel"],
+        .contact-form input[type="email"],
+        .contact-form select,
+        .contact-form textarea {
+            width: 100%;
+            padding: 14px;
+            margin-bottom: 18px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 1em;
+            color: #333;
+            outline: none;
+            transition: border-color 0.3s;
+            font-family: var(--font-poppins);
+        }
+
+        .contact-form input[type="text"]:focus,
+        .contact-form input[type="tel"]:focus,
+        .contact-form input[type="email"]:focus,
+        .contact-form select:focus,
+        .contact-form textarea:focus {
+            border-color: var(--color-green-whatsapp);
+        }
+
+        .phone-input-group {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 18px;
+        }
+
+        .phone-input-group .country-code-select {
+            flex-basis: 30%;
+            padding: 14px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 1em;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        .phone-input-group input[type="tel"] {
+            flex-basis: 70%;
+            margin-bottom: 0;
+        }
+
+        .contact-form textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .checkbox-container {
+            display: block;
+            position: relative;
+            padding-left: 35px;
+            margin-bottom: 25px;
+            cursor: pointer;
+            font-size: 0.95em;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            color: #555;
+            font-family: var(--font-poppins);
+        }
+
+        .checkbox-container input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+        }
+
+        .checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 22px;
+            width: 22px;
+            background-color: #eee;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        .checkbox-container input:checked ~ .checkmark {
+            background-color: var(--color-green-whatsapp);
+            border-color: var(--color-green-whatsapp);
+        }
+
+        .checkmark:after {
+            content: "";
+            position: absolute;
+            display: none;
+        }
+
+        .checkbox-container input:checked ~ .checkmark:after {
+            display: block;
+        }
+
+        .checkbox-container .checkmark:after {
+            left: 7px;
+            top: 3px;
+            width: 7px;
+            height: 13px;
+            border: solid white;
+            border-width: 0 3px 3px 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+
+        .submit-button {
+            background-color: var(--color-green-whatsapp);
+            color: white;
+            padding: 15px 25px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1em;
+            font-weight: bold;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            transition: background-color 0.3s, transform 0.2s;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            font-family: var(--font-poppins);
+        }
+
+        .submit-button:hover {
+            background-color: #1ea04d;
+            transform: translateY(-2px);
+        }
+
+        .powered-by {
+            text-align: center;
+            margin-top: 25px;
+            font-size: 0.85em;
+            color: #999;
+            font-family: var(--font-poppins);
+        }
+
+        /* ESTILOS DO MODAL */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1001;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.6);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border-radius: 12px;
+            width: 90%;
+            max-width: 500px;
+            position: relative;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4), 0 0 20px rgba(255, 255, 255, 0.1);
+            animation: fadeIn 0.3s ease-out;
+
+            max-height: 90vh;
+            overflow-y: auto;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .close-button {
+            color: #aaa;
+            float: right;
+            font-size: 38px;
+            font-weight: bold;
+            position: absolute;
+            top: 5px;
+            right: 15px;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        .close-button:hover,
+        .close-button:focus {
+            color: #333;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        /* Media Queries para responsividade */
+        @media (max-width: 768px) {
+            .main-header {
+                padding: 10px 20px;
+            }
+            .header-logo img {
+                height: 30px;
+            }
+            .main-nav ul {
+                display: none;
+            }
+            .menu-toggle {
+                display: block;
+            }
+            body {
+                padding-top: 70px;
+            }
+            .main-nav.mobile-active ul {
+                max-height: 300px;
+                display: flex;
+            }
+            .modal-content {
+                width: 95%;
+                padding: 15px;
+            }
+            .close-button {
+                font-size: 30px;
+                top: 0px;
+                right: 10px;
+            }
+
+            /* Ajustes para sec1 em mobile */
+            .sec1::before {
+                width: 100%;
+                height: 50%;
+                background-position: top center;
+                background-size: contain;
+            }
+            .sec1 {
+                background-image: none; /* Se a imagem do body for a única, remova backgrounds de seção */
+                padding-top: 0;
+            }
+            .sec1 h1, .sec1 p {
+                margin-top: 50vh;
+                transform: translateY(-50%);
+                z-index: 3;
+            }
+
+            /* Ajustes para a nova seção de Confiança em mobile */
+            .confianca-content {
+                flex-direction: column;
+                gap: 30px;
+            }
+            .confianca-text {
+                padding-right: 0;
+            }
+            .confianca-image {
+                width: 100%;
+                max-width: 300px;
+                height: auto;
+            }
+            .btn-falar-especialista {
+                font-size: 1em;
+                padding: 12px 25px;
+            }
+
+            /* Ajustes da Nova Caixa de Contato Fixa em Mobile */
+            .contact-box {
+                width: 90%;
+                left: 50%;
+                transform: translateX(-50%);
+                padding: 15px;
+                bottom: 80px;
+            }
+            .contact-box h2 {
+                font-size: 1.5em;
+            }
+            .contact-box p {
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="header-content">
+            <div class="header-logo">
+                <img src="imagens/logo.png" alt="Logo Dr. Rafael" class="logo-header" />
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#intro" class="active">Início</a></li>
+                    <li><a href="#confianca">Quem somos</a></li> 
+                    <li><a href="#atuamos">Em que posso ajudar</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" id="menuToggle">&#9776;</button>
+        </div>
+    </header>
+
+    <section class="sec1" id="intro">
+        <p class="section-subtitle">ESCRITÓRIO DE ADVOCACIA PARTICULAR</p>
+        <h1>Dr. Rafael Mendes Nunes</h1>
+        <p>Há 3 anos trabalhando para ajudar você</p>
+        <b>Advogado 24 horas para casos urgentes </b>
+        <a href="#" class="btn-main-whatsapp" id="openWhatsappFormMain">
+  Entrar em Contato Agora!
+</a>
+    </section>
+
+    <section id="confianca">
+        <div class="confianca-content">
+            <div class="confianca-text">
+                <h2>Por que confiar em nosso trabalho?</h2>
+                <p>Com mais de 3 anos de atuação sólida em diversas áreas do Direito, oferecemos soluções jurídicas estratégicas e assertivas, focadas na resolução rápida e eficaz dos seus problemas. Atuamos tanto na esfera administrativa quanto judicial, afim de garantir resultados concretos e seguros..</p>
+                <p>Enfrentar um processo jurídico pode ser desafiador, por isso oferecemos atendimento personalizado.
+Unimos experiência, estratégia e sensibilidade para garantir soluções eficazes e transparência em cada etapa.
+Nosso compromisso é proteger seus direitos.
+Estaremos ao seu lado, informando e acolhendo você durante todo o caminho..</strong></p>
+                <a href="#" class="btn-falar-especialista" id="openWhatsappFormFromConfidence">
+                    <i class="fas fa-comment-dots"></i> Falar com um especialista
+                </a>
+            </div>
+            <div class="confianca-image">
+                <img src="imagens/Adv.png" alt="Equipe de Advogados" /> 
+            </div>
+        </div>
+    </section>
+
+    <section id="atuamos" class="sec3">
+        <h2>Áreas de Atuação</h2>
+        <div class="atuamos-content-wrapper">
+            <div class="atuamos-text-col">
+                <h3>Da uma olhada no que podemos te ajudar.</h3>
+                <p>Nossa equipe de especialistas está pronta para oferecer suporte jurídico e adminitrativo em diversas áreas. Atuamos com dedicação para garantir que seus direitos sejam protegidos e que as suas dores seja sanadas.</p>
+                 <h3>Confie em quem tem experiência e paixão pela justiça para guiar você em cada etapa do processo. <h3>
+            </div>
+            <div class="atuacao-grid">
+                <div class="area">
+                    <div class="icon"><i class="fas fa-balance-scale"></i></div>
+                    <h3>Direito Civil</h3>
+                    <p>Conflitos civis, indenizações e responsabilidade jurídica com foco em soluções eficazes.</p>
+                    <a href="#" class="btn-contato open-whatsapp-modal-area">Saiba Mais</a>
+                </div>
+                <div class="area">
+                    <div class="icon"><i class="fas fa-user-tie"></i></div>
+                    <h3>Direito Trabalhista</h3>
+                    <p>Defesa de empregados e empregadores em causas relacionadas ao trabalho e seus direitos.</p>
+                    <a href="#" class="btn-contato open-whatsapp-modal-area">Saiba Mais</a>
+                </div>
+                <div class="area">
+                    <div class="icon"><i class="fas fa-people-roof"></i></div>
+                    <h3>Família e Sucessões</h3>
+                    <p>Divórcios, guarda de filhos, pensão e partilhas com sensibilidade e atenção individual.</p>
+                    <a href="#" class="btn-contato open-whatsapp-modal-area">Saiba Mais</a>
+                </div>
+                <div class="area">
+                    <div class="icon"><i class="fas fa-file-contract"></i></div>
+                    <h3>Contratos</h3>
+                    <p>Elaboração e análise de contratos garantindo segurança jurídica e previsibilidade.</p>
+                    <a href="#" class="btn-contato open-whatsapp-modal-area">Saiba Mais</a>
+                </div>
+                <div class="area">
+                    <div class="icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Consultoria Preventiva</h3>
+                    <p>Orientação jurídica para tomada de decisões seguras e prevenção de litígios.</p>
+                    <a href="#" class="btn-contato open-whatsapp-modal-area">Saiba Mais</a>
+                </div>
+                <div class="area">
+                    <div class="icon"><i class="fas fa-gavel"></i></div>
+                    <h3>Defesa Judicial</h3>
+                    <p>Representação em ações judiciais com estratégia e dedicação à sua causa.</p>
+                    <a href="#" class="btn-contato open-whatsapp-modal-area">Saiba Mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="contact-box" id="contato-box-anchor">
+
+        <h2>Entre em contato</h2>
+
+        <p><i class="fas fa-phone"></i> Telefone: (11) 93300-6946</p>
+
+        <p><i class="fas fa-envelope"></i> Email: rmnunes.adv@hotmail.com</p>
+
+        <p><i class="fas fa-map-marker-alt"></i> Endereço: Rua da Paz, nº 1601, Conjunto 109 Chácara Santo Antônio – São Paulo - SP</p>
+    </div>
+
+    <a href="#" class="whatsapp" id="openWhatsappForm">
+        <i class="fab fa-whatsapp"></i> Fale comigo via WhatsApp
+    </a>
+
+    <div id="whatsappModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div class="form-container">
+                <div class="form-header">
+                    <p>Preencha seus dados abaixo para que possamos iniciar o atendimento! &#x1F60A;</p>
+                </div>
+                <form class="contact-form" id="whatsappForm">
+                    <input type="text" name="nome" placeholder="Nome" required />
+                    <div class="phone-input-group">
+                        <select name="country-code" class="country-code-select">
+                            <option value="+1">🇺🇸 +1</option>
+                            <option value="+55" selected>🇧🇷 +55</option>
+                            </select>
+                        <input type="tel" name="telefone" placeholder="Telefone" required />
+                    </div>
+                    <input type="email" name="email" placeholder="E-mail" required />
+                    <select name="setor" class="sector-select">
+                        <option value="">Setor</option>
+                        <option value="civil">Direito Civil</option>
+                        <option value="trabalhista">Direito Trabalhista</option>
+                        <option value="familia">Família e Sucessões</option>
+                        <option value="contratos">Contratos</option>
+                        <option value="consultoria">Consultoria Preventiva</option>
+                        <option value="judicial">Defesa Judicial</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                    <textarea name="mensagem" placeholder="Quero saber mais"></textarea>
+                    <label class="checkbox-container">
+                        Ao preencher este formulário, autorizo o envio de comunicações alinhadas aos meus interesses.
+                        <input type="checkbox" name="autorizacao" checked />
+                        <span class="checkmark"></span>
+                    </label>
+                    <button type="submit" class="submit-button" id="submitWhatsapp">
+                        <i class="fab fa-whatsapp"></i> Inicie seu Atendimento
+                    </button>
+                </form>
+                <p class="powered-by">Por Rise Up Marketing</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+     document.addEventListener('DOMContentLoaded', (event) => {
+    const whatsappModalOnLoad = document.getElementById('whatsappModal');
+    if (whatsappModalOnLoad) {
+        whatsappModalOnLoad.style.display = 'none';
+    }
+});
+        const openWhatsappFormMain = document.getElementById('openWhatsappFormMain');
+        const sections = document.querySelectorAll('section[id]');
+        const mainNavLinks = document.querySelectorAll('.main-nav ul li a');
+        const menuToggle = document.getElementById('menuToggle');
+        const mainNav = document.querySelector('.main-nav');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            const headerOffset = document.querySelector('.main-header').offsetHeight;
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - (headerOffset + 20);
+                if (pageYOffset >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            mainNavLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') && link.getAttribute('href').endsWith('#' + current)) {
+                    link.classList.add('active');
+                }
+            });
+
+if (openWhatsappFormMain) {
+    openWhatsappFormMain.addEventListener('click', function(event) {
+        event.preventDefault();
+        if (whatsappModal) {
+            whatsappModal.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+    });
+}
+            
+            const contactBox = document.getElementById('contato-box-anchor');
+            if (contactBox) {
+                const contactBoxRect = contactBox.getBoundingClientRect();
+                if (contactBoxRect.top < window.innerHeight && contactBoxRect.bottom >= 0) {
+                    mainNavLinks.forEach(link => {
+                        if (link.getAttribute('href') === '#contato-box-anchor') {
+                            link.classList.add('active');
+                        } else {
+                            // Não remove 'active' de outros links aqui, para evitar conflito com scrollspy
+                        }
+                    });
+                } else {
+                    // Se a caixa de contato não estiver visível, garante que o link de contato não esteja ativo
+                    mainNavLinks.forEach(link => {
+                        if (link.getAttribute('href') === '#contato-box-anchor') {
+                            link.classList.remove('active');
+                        }
+                    });
+                }
+            }
+        });
+
+        if (menuToggle) {
+            menuToggle.addEventListener('click', () => {
+                mainNav.classList.toggle('mobile-active');
+            });
+
+            mainNavLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    if (mainNav.classList.contains('mobile-active')) {
+                        mainNav.classList.remove('mobile-active');
+                    }
+                });
+            });
+        }
+
+        const whatsappModal = document.getElementById('whatsappModal');
+        const openWhatsappFormButton = document.getElementById('openWhatsappForm');
+        const openWhatsappFormFromConfidence = document.getElementById('openWhatsappFormFromConfidence');
+
+        const closeButton = document.querySelector('.close-button');
+        const whatsappForm = document.getElementById('whatsappForm');
+        const submitWhatsappButton = document.getElementById('submitWhatsapp');
+        const whatsappNumber = '55119587293648'; // Substitua pelo número do Dr. Rafael (Ex: 55 DDD NÚMERO)
+
+        if (openWhatsappFormButton) {
+            openWhatsappFormButton.addEventListener('click', function(event) {
+                event.preventDefault();
+                if (whatsappModal) {
+                    whatsappModal.style.display = 'flex';
+                    document.body.style.overflow = 'hidden';
+                }
+            });
+        }
+
+        if (openWhatsappFormFromConfidence) {
+            openWhatsappFormFromConfidence.addEventListener('click', function(event) {
+                event.preventDefault();
+                if (whatsappModal) {
+                    whatsappModal.style.display = 'flex';
+                    document.body.style.overflow = 'hidden';
+                }
+            });
+        }
+
+        const openWhatsappModalAreaButtons = document.querySelectorAll('.btn-contato.open-whatsapp-modal-area');
+        if (openWhatsappModalAreaButtons.length > 0) {
+            openWhatsappModalAreaButtons.forEach(button => {
+                button.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    if (whatsappModal) {
+                        whatsappModal.style.display = 'flex';
+                        document.body.style.overflow = 'hidden';
+                    }
+                });
+            });
+        }
+
+        if (closeButton) {
+            closeButton.addEventListener('click', function() {
+                if (whatsappModal) {
+                    whatsappModal.style.display = 'none';
+                    document.body.style.overflow = '';
+                }
+            });
+        }
+
+        if (whatsappModal) {
+            window.addEventListener('click', function(event) {
+                if (event.target == whatsappModal) {
+                    whatsappModal.style.display = 'none';
+                    document.body.style.overflow = '';
+                }
+            });
+        }
+
+        if (whatsappForm && submitWhatsappButton) {
+            whatsappForm.addEventListener('submit', function(event) {
+                event.preventDefault();
+
+                const nome = whatsappForm.querySelector('input[name="nome"]').value;
+                const countryCode = whatsappForm.querySelector('select[name="country-code"]').value;
+                const telefone = whatsappForm.querySelector('input[name="telefone"]').value;
+                const email = whatsappForm.querySelector('input[name="email"]').value;
+                const setor = whatsappForm.querySelector('select[name="setor"]').value;
+                const mensagem = whatsappForm.querySelector('textarea[name="mensagem"]').value;
+                const autorizacao = whatsappForm.querySelector('input[name="autorizacao"]').checked ? 'Sim' : 'Não';
+
+                let whatsappMessage = `*Novo Atendimento - Dr. Rafael Mendes Nunes*\n\n`;
+                whatsappMessage += `*Nome:* ${nome}\n`;
+                whatsappMessage += `*Telefone:* ${countryCode}${telefone}\n`;
+                whatsappMessage += `*E-mail:* ${email}\n`;
+                whatsappMessage += `*Setor de Interesse:* ${setor || 'Não informado'}\n`;
+                whatsappMessage += `*Mensagem:* ${mensagem || 'Não informada'}\n`;
+                whatsappMessage += `*Autorizou comunicações:* ${autorizacao}\n\n`;
+                whatsappMessage += `_Enviado via Formulário do Site_`;
+
+                const encodedMessage = encodeURIComponent(whatsappMessage);
+                const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+                window.open(whatsappUrl, '_blank');
+
+                if (whatsappModal) {
+                    whatsappModal.style.display = 'none';
+                    whatsappForm.reset();
+                    document.body.style.overflow = '';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
